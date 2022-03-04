@@ -8,7 +8,7 @@ That token account's authority is a PDA owned by the program.
 
 Players need a Token Account to receive the prize.
 
-How do you win? Just initialize a Game, increment a counter until it gets 10, and you win! Terrible.
+How do you win? Just initialize a Game, increment a counter until it gets to 10, and you win! Terrible.
 
 ### Instructions
 
