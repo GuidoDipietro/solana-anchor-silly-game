@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Mint, Token, TokenAccount, SetAuthority, Transfer};
 use spl_token::instruction::AuthorityType;
 
-declare_id!("oi5aDhHe4ZkPdh1Ttfuo9MxV9fQdMiLz226wNpJCvfq");
+declare_id!("2rtCa9QiPeY5Jeu5GDPPQJu3zir4YgeQakhUGAkKFWf2");
 
 #[program]
 pub mod tokens_test {
