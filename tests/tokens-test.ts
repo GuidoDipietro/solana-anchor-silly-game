@@ -3,7 +3,6 @@ import { Program } from '@project-serum/anchor';
 import * as spltoken from "@solana/spl-token";
 import { TokensTest } from '../target/types/tokens_test';
 import * as assert from 'assert';
-import { TOKEN_PROGRAM_ID } from '@project-serum/anchor/dist/cjs/utils/token';
 
 describe('tokens-test', () => {
 
@@ -59,7 +58,7 @@ describe('tokens-test', () => {
             token_creator.publicKey,            // Mint Authority
             null,                               // Freeze Authority
             8,                                  // Decimals
-            TOKEN_PROGRAM_ID                    // Token Program
+            spltoken.TOKEN_PROGRAM_ID           // Token Program
         );
 
         // Creating Token Account for Player to hold the panchos
@@ -155,7 +154,7 @@ describe('tokens-test', () => {
                         reserveTokenAccount: reserveTokenAccount,
                         reserveAuthority: reserveAuthority,
                         game: game,
-                        tokenProgram: TOKEN_PROGRAM_ID,
+                        tokenProgram: spltoken.TOKEN_PROGRAM_ID,
                     },
                     signers: [player],
                 }
@@ -189,7 +188,7 @@ describe('tokens-test', () => {
                         reserveTokenAccount: reserveTokenAccount,
                         reserveAuthority: reserveAuthority,
                         game: game,                               // not impostor's game
-                        tokenProgram: TOKEN_PROGRAM_ID,
+                        tokenProgram: spltoken.TOKEN_PROGRAM_ID,
                     },
                     signers: [player],
                 }
@@ -217,7 +216,7 @@ describe('tokens-test', () => {
                     reserveTokenAccount: reserveTokenAccount,
                     reserveAuthority: reserveAuthority,
                     game: game,
-                    tokenProgram: TOKEN_PROGRAM_ID,
+                    tokenProgram: spltoken.TOKEN_PROGRAM_ID,
                 },
                 signers: [player],
             }
@@ -243,7 +242,7 @@ describe('tokens-test', () => {
                         reserveTokenAccount: reserveTokenAccount,
                         reserveAuthority: reserveAuthority,
                         game: game,
-                        tokenProgram: TOKEN_PROGRAM_ID,
+                        tokenProgram: spltoken.TOKEN_PROGRAM_ID,
                     },
                     signers: [player],
                 }
