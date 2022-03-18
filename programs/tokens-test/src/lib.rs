@@ -63,7 +63,7 @@ pub struct Initialize<'info> {
         seeds = [b"reserve-authority"],
         bump,
         payer = initializer,
-        space = 8 // no function or associated item named `default` found for struct `anchor_lang::prelude::AccountInfo`
+        space = 0 // no function or associated item named `default` found for struct `anchor_lang::prelude::AccountInfo`
     )]
     pub reserve_authority: AccountInfo<'info>,
 
