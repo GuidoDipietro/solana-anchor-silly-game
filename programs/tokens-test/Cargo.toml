@@ -2,7 +2,7 @@
 name = "tokens-test"
 version = "0.1.0"
 description = "Created with Anchor"
-edition = "2018"
+edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
@@ -16,6 +16,6 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = "0.21.0"
-anchor-spl = {version = "0.21.0"}
-spl-token = {version = "3.3.0", features = ["no-entrypoint"]}
+anchor-lang = { version = "0.26.0", features = [ "init-if-needed" ] }
+anchor-spl = { version = "0.26.0" }
+spl-token = { version = "3.3.0", features = ["no-entrypoint"] }
